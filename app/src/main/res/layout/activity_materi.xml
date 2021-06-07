@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <FrameLayout
+        android:id="@+id/materi_mainframe"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/materi_hscroll">
+
+    </FrameLayout>
+
+    <HorizontalScrollView
+        android:background="@color/color2"
+        android:id="@+id/materi_hscroll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:padding="8dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/materi_btndesimal"
+                android:layout_width="120dp"
+                android:layout_height="50dp"
+                android:textSize="12sp"
+                android:layout_marginStart="4dp"
+                android:layout_marginEnd="4dp"
+                android:background="@drawable/custom_bg3"
+                android:text="Konversi\nDesimal"
+                android:textColor="@color/color2">
+
+            </Button>
+
+            <Button
+                android:textSize="12sp"
+                android:id="@+id/materi_btnbiner"
+                android:layout_width="120dp"
+                android:layout_height="50dp"
+                android:layout_marginStart="4dp"
+                android:layout_marginEnd="4dp"
+                android:background="@drawable/custom_bg3"
+                android:text="Konversi\nBiner"
+                android:textColor="@color/color2">
+
+            </Button>
+
+            <Button
+                android:id="@+id/materi_btnoktal"
+                android:layout_width="120dp"
+                android:layout_height="50dp"
+                android:textSize="12sp"
+                android:layout_marginStart="4dp"
+                android:layout_marginEnd="4dp"
+                android:background="@drawable/custom_bg3"
+                android:text="Konversi\nOktal"
+                android:textColor="@color/color2">
+
+            </Button>
+
+            <Button
+                android:id="@+id/materi_btnheksadesimal"
+                android:layout_width="120dp"
+                android:layout_height="50dp"
+                android:textSize="12sp"
+                android:layout_marginStart="4dp"
+                android:layout_marginEnd="4dp"
+                android:background="@drawable/custom_bg3"
+                android:text="Konversi\nHeksadesimal"
+                android:textColor="@color/color2">
+
+            </Button>
+
+        </LinearLayout>
+
+    </HorizontalScrollView>
+
+</RelativeLayout>

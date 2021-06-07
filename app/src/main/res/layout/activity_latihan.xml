@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/latihan_f"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="12dp"
+        android:fontFamily="@font/mfont1"
+        android:text="Biner"
+        android:textSize="22sp">
+
+    </TextView>
+
+    <LinearLayout
+        android:id="@+id/latihan_linear1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/latihan_btncek"
+        android:layout_margin="16dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginEnd="6dp"
+            android:src="@drawable/ic_benar">
+
+        </ImageView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Jawaban Benar!">
+
+        </TextView>
+
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/latihan_edts"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/latihan_f"
+        android:layout_marginStart="12dp"
+        android:layout_marginEnd="12dp"
+        android:enabled="false"
+        android:fontFamily="@font/mfont2"
+        android:text="1000101010"
+        android:textColor="@color/colorPrimary">
+
+    </EditText>
+
+    <TextView
+        android:id="@+id/latihan_s"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/latihan_edts"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="12dp"
+        android:fontFamily="@font/mfont1"
+        android:text="Desimal"
+        android:textSize="22sp">
+
+    </TextView>
+
+    <EditText
+        android:id="@+id/latihan_jawaban"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/latihan_s"
+        android:layout_marginStart="12dp"
+        android:layout_marginEnd="12dp"
+        android:fontFamily="@font/mfont2"
+        android:hint="Ketik jawaban disini..."
+        android:textColor="@color/colorPrimary">
+
+    </EditText>
+
+    <Button
+        android:id="@+id/latihan_btncek"
+        android:layout_width="150dp"
+        android:layout_height="60dp"
+        android:layout_below="@id/latihan_jawaban"
+        android:layout_margin="12dp"
+        android:background="@drawable/custom_bg5"
+        android:text="Cek Jawaban"
+        android:textColor="@color/color2">
+
+    </Button>
+
+    <Button
+        android:id="@+id/latihan_btngenerate_soalbaru"
+        android:layout_width="150dp"
+        android:layout_height="60dp"
+        android:layout_below="@id/latihan_jawaban"
+        android:layout_margin="12dp"
+        android:layout_toEndOf="@id/latihan_btncek"
+        android:background="@drawable/custom_bg4"
+        android:text="Generate \nSoal Baru"
+        android:textColor="@color/color2">
+
+    </Button>
+
+</RelativeLayout>

@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <Spinner
+        android:id="@+id/konversi_from"
+        android:layout_width="120dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="12dp">
+
+    </Spinner>
+
+    <TextView
+        android:id="@+id/konversi_space"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="12dp"
+        android:layout_toEndOf="@id/konversi_from"
+        android:fontFamily="@font/mfont1"
+        android:text="ke"
+        android:textSize="24sp">
+
+    </TextView>
+
+    <Spinner
+        android:id="@+id/konversi_to"
+        android:layout_width="120dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="12dp"
+        android:layout_toEndOf="@id/konversi_space">
+
+    </Spinner>
+
+    <EditText
+        android:id="@+id/konversi_in"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/konversi_from"
+        android:layout_marginStart="12dp"
+        android:layout_marginEnd="12dp"
+        android:fontFamily="@font/mfont2"
+        android:hint="Masukan nilai..."
+        android:textColor="@color/colorPrimary">
+
+    </EditText>
+
+    <Button
+        android:id="@+id/konversi_convert"
+        android:layout_width="120dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/konversi_in"
+        android:layout_alignParentEnd="true"
+        android:layout_margin="12dp"
+        android:background="@drawable/custom_bg5"
+        android:text="Konversi"
+        android:textColor="@color/color2">
+
+    </Button>
+
+    <TextView
+        android:id="@+id/konversi_output"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/konversi_convert"
+        android:layout_margin="12dp"
+        android:fontFamily="@font/mfont2"
+        android:text="Output: "
+        android:textSize="20sp">
+
+    </TextView>
+
+</RelativeLayout>

@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color2"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:id="@+id/main_linear1"
+        android:layout_marginTop="16dp"
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_margin="12dp"
+            android:src="@drawable/binary_ic"
+            android:id="@+id/main_icapp"
+            android:layout_width="70dp"
+            android:layout_height="70dp">
+
+        </ImageView>
+
+        <TextView
+            android:layout_marginTop="16dp"
+            android:id="@+id/main_titleapp"
+            android:layout_toEndOf="@id/main_icapp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/mfont1"
+            android:text="Konversi Biner"
+            android:textAlignment="center"
+            android:textSize="32sp">
+
+        </TextView>
+
+        <TextView
+            android:layout_toEndOf="@id/main_icapp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:fontFamily="@font/mfont2"
+            android:layout_below="@id/main_titleapp"
+            android:text="XRPL2-15-IMadeAdnyaSuthaWirya">
+
+        </TextView>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center">
+
+        <LinearLayout
+            android:id="@+id/main_materi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:background="@drawable/custom_bg1"
+            android:orientation="vertical"
+            android:padding="8dp">
+
+            <ImageView
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:src="@drawable/ic_materi">
+
+            </ImageView>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/mfont1"
+                android:text="Materi"
+                android:textAlignment="center"
+                android:textSize="20sp">
+
+            </TextView>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/main_latihan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:layout_toEndOf="@id/main_materi"
+            android:background="@drawable/custom_bg1"
+            android:orientation="vertical"
+            android:padding="8dp">
+
+            <ImageView
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:src="@drawable/ic_latihan">
+
+            </ImageView>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/mfont1"
+                android:text="Latihan"
+                android:textAlignment="center"
+                android:textSize="20sp">
+
+            </TextView>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/main_konversi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/main_materi"
+            android:layout_margin="8dp"
+            android:background="@drawable/custom_bg1"
+            android:orientation="vertical"
+            android:padding="8dp">
+
+            <ImageView
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:src="@drawable/ic_konversi">
+
+            </ImageView>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/mfont1"
+                android:text="Konversi"
+                android:textAlignment="center"
+                android:textSize="20sp">
+
+            </TextView>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/main_about"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/main_materi"
+            android:layout_margin="8dp"
+            android:layout_toEndOf="@id/main_konversi"
+            android:background="@drawable/custom_bg1"
+            android:orientation="vertical"
+            android:padding="8dp">
+
+            <ImageView
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:src="@drawable/ic_about">
+
+            </ImageView>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/mfont1"
+                android:text="Profil"
+                android:textAlignment="center"
+                android:textSize="20sp">
+
+            </TextView>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>

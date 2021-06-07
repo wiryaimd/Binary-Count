@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/heksadesimal_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="12dp"
+            android:fontFamily="@font/mfont1"
+            android:text="Heksadesimal"
+            android:textAlignment="center"
+            android:textSize="32sp">
+
+        </TextView>
+
+        <RelativeLayout
+            android:id="@+id/heksadesimal_relative1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/heksadesimal_title"
+            android:layout_margin="6dp"
+            android:background="@drawable/custom_bg4"
+            android:padding="6dp">
+
+            <TextView
+                android:id="@+id/heksadesimal_heksadesimalkedesimal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="12dp"
+                android:layout_marginEnd="12dp"
+                android:fontFamily="@font/mfont2"
+                android:text="Konversi Heksadesimal ke Desimal"
+                android:textSize="22sp">
+
+            </TextView>
+
+            <TextView
+                android:id="@+id/heksadesimal_desc1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/heksadesimal_heksadesimalkedesimal"
+                android:layout_marginStart="12dp"
+                android:layout_marginEnd="12dp"
+                android:text="Cara konversi mirip seperti biner ke desimal, bedanya pangkat nya bukan 2 melainkan 16 (jumlah radiks/basis Heksadesimal)">
+
+            </TextView>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/heksadesimal_relative1"
+            android:layout_margin="6dp"
+            android:background="@drawable/custom_bg4"
+            android:padding="6dp">
+
+            <TextView
+                android:id="@+id/heksadesimal_heksadesimalkeother"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="12dp"
+                android:layout_marginEnd="12dp"
+                android:fontFamily="@font/mfont2"
+                android:text="Konversi Heksadesimal ke Biner, Oktal"
+                android:textSize="22sp">
+
+            </TextView>
+
+            <TextView
+                android:id="@+id/heksadesimal_desc2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/heksadesimal_heksadesimalkeother"
+                android:layout_marginStart="12dp"
+                android:layout_marginEnd="12dp"
+                android:text="Kita bisa mengubah nya ke desimal terlebih dahulu kemudian dari desimal ke biner/oktal"
+                android:layout_marginBottom="8dp">
+
+            </TextView>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</ScrollView>
